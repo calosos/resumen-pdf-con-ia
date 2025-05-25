@@ -1,18 +1,17 @@
-# Requisitos para resumen_pdf_agente
+# requirements.txt
 
-# OCR y procesamiento de imagen
-pytesseract
-pillow
+# LLM y LangChain
+openai>=1.3.0
+langchain>=0.1.14
+langchain-community>=0.0.26
 
-# Procesamiento de PDF
-pdfplumber
+# OCR y manipulación de imágenes
+pdfplumber>=0.10.2
+pytesseract>=0.3.10
+Pillow>=10.2.0
 
-# Manejo de variables de entorno
-python-dotenv
+# Utilidades
+python-dotenv>=1.0.1
+colorama>=0.4.6
 
-# Colores en consola
-colorama
-
-# Para agentes futuros
-openai
-langchain  # opcional dependiendo del agente
+# Argumentos CLI y logging ya son nativos de Python
