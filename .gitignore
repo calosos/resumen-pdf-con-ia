@@ -1,0 +1,74 @@
+# --- Archivos compilados de Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Entornos virtuales ---
+venv/
+env/
+.venv/
+
+# --- Archivos de entorno ---
+.env
+.env.*.local
+*.env
+
+# --- Configuración de IDEs ---
+.idea/
+.vscode/
+
+# --- Archivos temporales de SO ---
+.DS_Store
+Thumbs.db
+
+# --- Logs y bases de datos ---
+*.log
+*.sqlite3
+
+# --- Archivos de construcción Python ---
+*.egg
+*.egg-info/
+dist/
+build/
+
+# --- Resultados de pruebas y cachés ---
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+.cache/
+pytest_cache/
+
+# --- Checkpoints de Jupyter ---
+.ipynb_checkpoints/
+
+# --- Archivos personalizados a ignorar ---
+coursera_cookies.json
+git_aliases.sh
+subtitulos.json
+ejemplo_ejecucion.sh
+install_deps.sh
+
+# --- Carpetas específicas de este proyecto ---
+logs/*
+!logs/.placeholder
+
+salida_markdown/*
+!salida_markdown/.placeholder
+
+entrada_pdf/*
+!entrada_pdf/.placeholder
+
+# Mantener el .placeholder y excluir los PDFs por defecto
+entrada_pdf/*.pdf
+
+# Ignorar resultados generados por los tests si existieran
+test/__snapshots__/
+test/__outputs__/
+
+# --- Archivos temporales o generados automáticamente ---
+*.bak
+*.tmp
+*.swp
+*.md~

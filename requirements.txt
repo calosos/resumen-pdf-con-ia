@@ -1,0 +1,18 @@
+# Requisitos para resumen_pdf_agente
+
+# OCR y procesamiento de imagen
+pytesseract
+pillow
+
+# Procesamiento de PDF
+pdfplumber
+
+# Manejo de variables de entorno
+python-dotenv
+
+# Colores en consola
+colorama
+
+# Para agentes futuros
+openai
+langchain  # opcional dependiendo del agente
