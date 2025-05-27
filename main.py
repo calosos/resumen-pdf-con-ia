@@ -51,5 +51,16 @@ def main():
     else:
         ejecutar_en_lote(args.pdf, args.base, debug=args.debug)
 
+def mensaje_inicio(texto="\n\t\t\t🚀 Iniciando ejecución del programa..."):
+    log.info("\n" + "=" * 100)
+    log.info(texto)
+    log.info("\n" + "=" * 100 + "\n")
+def mensaje_final(texto="\n\t\t\t✅ Proceso finalizado correctamente."):
+    log.info("\n" + "=" * 100)
+    log.info(texto)
+    log.info("\n" + "=" * 100 + "\n")
+
 if __name__ == "__main__":
+    mensaje_inicio()
     main()
+    mensaje_final()
